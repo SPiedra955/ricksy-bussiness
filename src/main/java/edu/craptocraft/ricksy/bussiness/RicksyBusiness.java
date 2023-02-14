@@ -1,13 +1,10 @@
-package edu.craptocraft;
-
-import edu.craptocraft.ricksy.bussiness.CreditCard;
+package edu.craptocraft.ricksy.bussiness;
 
 /**
  * Hello world!
  *
  */
-public class App 
-{
+public class RicksyBusiness {
     public static void main(String[] args) {
         System.out.println();
 
@@ -21,7 +18,8 @@ public class App
         
         System.out.println("\n" + "Tarjeta de Abradolph" + "\n" + 
                                   "===================="        );
-        System.out.println(abradolph);}}
+        System.out.println(abradolph);
+    
 
         /**
          * Construye el componente de reserva de Ovnis.
@@ -33,25 +31,25 @@ public class App
          * El coste del ovni es de 500 EZIs.
          */
 
-    //     UfosPark ufosPark = new UfosPark();
+        UfosPark ufosPark = new UfosPark();
 
-    //     // Da de alta en la flota de ovnis 2 UFOS.
+        // Da de alta en la flota de ovnis 2 UFOS.
 
-    //     String[] ufosID = { "unx", "dox" };
-	// 	for (String ovni : ufosID) {
-	// 		ufosPark.add(ovni);
-    //     }
+        String[] ufosID = { "unx", "dox" };
+		for (String ovni : ufosID) {
+			ufosPark.add(ovni);
+        }
         
-    //     // Procesamos el pago y reserva de ovni de Abradolph
-    //     ufosPark.dispatch(abradolph);
+        // Procesamos el pago y reserva de ovni de Abradolph
+        ufosPark.dispatch(abradolph);
 
-    //     // Mostramos el ID del ovni asignado a Abradolph
-    //     System.out.println("\nOvni de Abradolph\n" + 
-    //                          "=================");
-    //     System.out.println(ufosPark.getUfoOf(abradolph.number()));
+        // Mostramos el ID del ovni asignado a Abradolph
+        System.out.println("\nOvni de Abradolph\n" + 
+                             "=================");
+        System.out.println(ufosPark.getUfoOf(abradolph.number()));
        
-    //     // Mostramos el credito de la tarjeta de Abradolph
-    //     System.out.println("Credito de Abradolph: " + abradolph.credit());
+        // Mostramos el credito de la tarjeta de Abradolph
+        System.out.println("Credito de Abradolph: " + abradolph.credit());}}
 
     //     // La dualidad en Abradolph quiere reservar otro ovni.
     //     // El sistema detecta que ya tiene uno 

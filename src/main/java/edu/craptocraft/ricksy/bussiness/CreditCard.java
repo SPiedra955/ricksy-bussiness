@@ -4,10 +4,10 @@ public class CreditCard {
 
     private final String owner;
     private final String number;
-    private final String SYMBOL = "EZIS";
+    private final String SYMBOL = "EZIS";    
     private Double credit = 3000d;
 
-    public CreditCard(String owner, String number){
+    CreditCard(String owner, String number){
         this.owner = owner;
         this.number = number;
     }
@@ -16,7 +16,7 @@ public class CreditCard {
         return this.number;
     }
 
-    String CardOwner(){
+    String cardOwner(){
         return this.owner;
     }
 
@@ -26,19 +26,16 @@ public class CreditCard {
 
     @Override
     public String toString(){
-        return "owner " + this.owner +
-               "\n" + this.number + 
-               "\n" + this.credit + " " + this.SYMBOL;
+
+        return "Owner " + owner + "\n" + number + "\n" + credit + " " + SYMBOL;
     }
 
-    Boolean pay(Double charge){
-        if(this.credit >= charge){
-            this.credit -= charge;
+    Boolean pay(Double pay){
+        if(this.credit >= pay){
+            credit -= pay;
             return true;
         }else{
             return false;
         }
     }
-
-    
 }
