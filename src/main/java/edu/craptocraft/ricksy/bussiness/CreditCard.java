@@ -30,7 +30,7 @@ public class CreditCard {
         return "Owner " + owner + "\n" + number + "\n" + credit + " " + SYMBOL;
     }
 
-    Boolean pay(Double pay){
+    Boolean pay(double pay){
         if(this.credit >= pay){
             credit -= pay;
             return true;
